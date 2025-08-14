@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(213, 211, 211);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(8, 53, 160);
+  padding: 16px;
+  border-radius: 8px;
+  gap: 8px;
+  color: white;
+}
+button {
+  background-color: rgb(5, 155, 5);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: 0;
+}
+
+label + input[type="date"],
+label + input[type="time"] {
+  display: inline-block;
+  width: 48%;
+}
