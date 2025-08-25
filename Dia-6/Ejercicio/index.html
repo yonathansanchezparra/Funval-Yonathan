@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Delicias Maracuchas</title>
+    <style>
+      .sol-bandera {
+        position: relative;
+      }
+      .sol-bandera::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: white;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body class="h-full w-full bg-blue-50">
+    <header
+      class="h-[15%] bg-gradient-to-b from-blue-800 to-black text-white flex justify-between items-center px-6 md:px-8"
+    >
+      <div class="md:hidden"></div>
+      <div class="flex items-center space-x-4">
+        <div
+          class="sol-bandera bg-yellow-400 w-12 h-12 rounded-full flex items-center justify-center"
+        >
+          <span class="text-black font-bold text-lg">Z</span>
+        </div>
+        <h1 class="text-3xl font-bold">Sabor Zuliano</h1>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-8 md:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+      <ul class="gap-8 text-2xl hidden md:flex">
+        <li class="hover:text-yellow-400 transition">Inicio</li>
+        <li class="hover:text-yellow-400 transition">Platos</li>
+        <li class="hover:text-yellow-400 transition">Recetas</li>
+      </ul>
+    </header>
+    <main class="h-[75%] flex items-center justify-center p-4">
+      <aside
+        class="hidden md:flex w-[40%] h-full bg-gradient-to-b from-blue-800 to-black text-white items-center justify-center"
+      >
+        <div class="text-center p-6">
+          <div
+            class="sol-bandera bg-yellow-400 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <span class="text-black font-bold text-4xl">Z</span>
+          </div>
+          <h2 class="text-5xl font-bold mb-4">¡Delicias Maracuchas!</h2>
+          <p class="text-xl">
+            "Sabores que representan nuestro orgullo zuliano"
+          </p>
+          <img
+            src="./Bandera.jpg.webp"
+            alt="Bandera del Zulia"
+            class="mt-6 w-48 mx-auto"
+          />
+        </div>
+      </aside>
+      <div
+        class="contenedor-cards p-8 gap-8 flex flex-col md:w-[60%] md:flex-row"
+      >
+        <div
+          class="card rounded-2xl flex bg-white items-center justify-center p-4 md:flex-col gap-3 shadow-lg hover:shadow-xl transition-shadow border-2 border-yellow-400"
+        >
+          <img
+            src="./patacon.jpg"
+            alt="Patacón Maracucho"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <div class="p-4">
+            <h3 class="text-2xl font-bold text-blue-800 mb-2">
+              Patacón Maracucho
+            </h3>
+            <p class="text-gray-800 text-justify">
+              El auténtico patacón maracucho es una delicia hecha con plátano
+              verde aplastado y frito hasta quedar crujiente. Se sirve con carne
+              mechada, queso blanco, aguacate y salsas. Una explosión de sabores
+              que representa la esencia de la gastronomía zuliana. ¡Imperdible
+              para cualquier visitante!
+            </p>
+            <div class="mt-3 flex space-x-2">
+              <span class="px-2 py-1 bg-blue-800 text-white text-sm rounded"
+                >Tradicional</span
+              >
+              <span class="px-2 py-1 bg-black text-white text-sm rounded"
+                >Popular</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="card flex rounded-2xl bg-white items-center justify-center p-4 md:flex-col gap-3 shadow-lg hover:shadow-xl transition-shadow border-2 border-yellow-400"
+        >
+          <img
+            src="./Macarronada.jpeg"
+            alt="Macarronada"
+            class="w-full h-48 object-cover rounded-lg"
+          />
+          <div class="p-4">
+            <h3 class="text-2xl font-bold text-blue-800 mb-2">Macarronada</h3>
+            <p class="text-gray-800 text-justify">
+              La macarronada maracucha es un plato contundente de pasta con
+              salsa roja, carne molida, salchichas, jamón y queso. Es típica en
+              celebraciones y reuniones familiares. Su preparación varía según
+              cada cocina, pero siempre mantiene ese toque zuliano que la hace
+              especial. ¡Un clásico de los domingos maracuchos!
+            </p>
+            <div class="mt-3 flex space-x-2">
+              <span class="px-2 py-1 bg-blue-800 text-white text-sm rounded"
+                >Festivo</span
+              >
+              <span class="px-2 py-1 bg-black text-white text-sm rounded"
+                >Familiar</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="h-[10%] bg-gradient-to-b from-blue-800 to-black text-white flex items-center justify-center"
+    ></footer>
+  </body>
+</html>
